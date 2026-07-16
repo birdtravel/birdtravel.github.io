@@ -88,22 +88,47 @@ body{
    LOGO PERUSAHAAN
 ====================== */
 
-.logo-perusahaan{
+/* ======================
+   LINGKARAN PUTIH
+====================== */
+
+.logo-circle{
 
     width:330px;
-
     height:330px;
-
-    object-fit:contain;
 
     background:#ffffff;
 
-    padding:10px;
-
     border-radius:50%;
 
-    box-shadow:
-    0 10px 35px rgba(0,0,0,.35);
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+
+}
+
+
+/* ======================
+   LOGO PERUSAHAAN
+====================== */
+
+.logo-perusahaan{
+
+    width:220px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    transform:scale(1.7);
+
+    transition:.3s;
 
 }
 
@@ -323,11 +348,18 @@ footer{
 
 @media(max-width:768px){
 
+.logo-circle{
+
+    width:240px;
+    height:240px;
+
+}
+
 .logo-perusahaan{
 
-    width:260px;
+    width:160px;
 
-    height:260px;
+    transform:scale(1.6);
 
 }
 
