@@ -67,7 +67,19 @@ header h2{
     font-weight:400;
     line-height:1.8;
 }
+/* ======================
+   LOGO PERUSAHAAN
+====================== */
 
+.logo-perusahaan{
+
+    width:150px;
+
+    height:auto;
+
+    margin-bottom:25px;
+
+}
 /* ======================
    BUTTON
 ====================== */
