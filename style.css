@@ -95,7 +95,14 @@ body{
 .logo-circle{
 
     width:330px;
+
     height:330px;
+
+    min-width:330px;
+
+    min-height:330px;
+
+    aspect-ratio:1 / 1;
 
     background:#ffffff;
 
@@ -120,13 +127,13 @@ body{
 
 .logo-perusahaan{
 
-    width:310px;
+    width:280px;
 
     height:auto;
 
     object-fit:contain;
 
-    transform:scale(1.55);
+    transform:scale(1.25);
 
     transition:.3s;
 
@@ -183,10 +190,10 @@ body{
 
 }
 /* ======================
-   BUTTON
+   circle
 ====================== */
 
-.button{
+.circle{
 
     display:inline-flex;
 
@@ -194,9 +201,11 @@ body{
 
     max-width:100%;
 
-}
-
     align-items:center;
+
+    justify-content:center;
+
+}
 
     justify-content:center;
     background:var(--secondary);
@@ -210,7 +219,7 @@ body{
     box-shadow:var(--shadow);
 }
 
-.button:hover{
+.circle:hover{
     background:var(--secondary-hover);
     transform:translateY(-3px);
 }
@@ -380,6 +389,12 @@ footer{
 
     height:240px;
 
+    min-width:240px;
+
+    min-height:240px;
+
+    aspect-ratio:1 / 1;
+
     margin:auto;
 
 }
@@ -429,7 +444,7 @@ footer{
         margin-top:60px;
     }
 
-    .button{
+    .circle{
 
     display:inline-flex;
 
