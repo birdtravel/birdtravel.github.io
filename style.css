@@ -551,30 +551,3 @@ footer{
 
 }
 
-
-/* tampilan HP */
-
-@media(max-width:768px){
-
-    .wa-floating{
-
-        width:58px;
-
-        height:58px;
-
-        right:18px;
-
-        bottom:18px;
-
-    }
-
-
-    .wa-floating::before{
-
-        width:34px;
-
-        height:34px;
-
-    }
-
-}
