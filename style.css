@@ -43,41 +43,104 @@ body{
 }
 
 /* ======================
-   HEADER
+   MODERN HEADER
 ====================== */
 
-header{
-    background:linear-gradient(135deg,#0A4FA3,#1565c0);
-    color:#fff;
-    text-align:center;
-    padding:90px 20px;
+.hero{
+
+    display:flex;
+    width:100%;
+    min-height:420px;
+
 }
 
-header h1{
-    font-size:48px;
-    font-weight:700;
-    margin-bottom:20px;
-    letter-spacing:2px;
-}
 
-header h2{
-    max-width:800px;
-    margin:0 auto 40px;
-    font-size:22px;
-    font-weight:400;
-    line-height:1.8;
-}
 /* ======================
-   LOGO PERUSAHAAN
+   BAGIAN LOGO PUTIH
 ====================== */
+
+.hero-logo{
+
+    width:40%;
+    background:#ffffff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+/* LOGO PERUSAHAAN */
 
 .logo-perusahaan{
 
     width:150px;
+    height:150px;
 
-    height:auto;
+    object-fit:contain;
 
-    margin-bottom:25px;
+    background:#ffffff;
+
+    padding:15px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+
+
+/* ======================
+   BAGIAN INFORMASI BIRU
+====================== */
+
+.hero-content{
+
+    width:60%;
+
+    background:linear-gradient(135deg,#0A4FA3,#1565c0);
+
+    color:#ffffff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:50px;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    letter-spacing:2px;
+
+}
+
+
+
+.hero-content h2{
+
+    max-width:800px;
+
+    font-size:22px;
+
+    font-weight:400;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
 
 }
 /* ======================
@@ -239,16 +302,44 @@ footer{
 
 @media(max-width:768px){
 
-    header{
-        padding:70px 20px;
+    .hero{
+
+        flex-direction:column;
+
     }
 
-    header h1{
+
+    .hero-logo{
+
+        width:100%;
+
+        height:250px;
+
+    }
+
+
+    .hero-content{
+
+        width:100%;
+
+        padding:40px 25px;
+
+        text-align:center;
+
+    }
+
+
+    .hero-content h1{
+
         font-size:34px;
+
     }
 
-    header h2{
+
+    .hero-content h2{
+
         font-size:18px;
+
     }
 
     section{
