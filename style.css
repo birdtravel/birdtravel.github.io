@@ -49,11 +49,16 @@ body{
 .hero{
 
     display:flex;
+
     width:100%;
-    min-height:420px;
+
+    min-height:360px;
+
+    background:#0A4FA3;
+
+    align-items:center;
 
 }
-
 
 /* ======================
    BAGIAN LOGO PUTIH
@@ -65,9 +70,7 @@ body{
 
 .hero-logo{
 
-    width:38%;
-
-    background:#7ec8f5;
+    width:220px;
 
     display:flex;
 
@@ -75,7 +78,9 @@ body{
 
     align-items:center;
 
-    padding:30px;
+    padding:25px;
+
+    flex-shrink:0;
 
 }
 
@@ -105,9 +110,9 @@ body{
 
 .hero-content{
 
-    width:62%;
+    flex:1;
 
-    background:linear-gradient(135deg,#0A4FA3,#1565c0);
+    background:#0A4FA3;
 
     color:#ffffff;
 
