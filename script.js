@@ -1,98 +1,127 @@
-// ============================================
-// 1. HAMBURGER MENU (Mobile Navigation)
-// ============================================
-const hamburger = document.getElementById('hamburgerToggle');
-const navList = document.querySelector('.nav-list');
+/* ===================================
+   BIRD TRAVEL
+   script.js
+=================================== */
 
-if (hamburger && navList) {
-    // Toggle menu saat hamburger diklik
-    hamburger.addEventListener('click', function(e) {
-        e.stopPropagation();
-        if (navList.style.display === 'flex') {
-            navList.style.display = 'none';
-        } else {
-            navList.style.display = 'flex';
+
+/* ==========================
+   SMOOTH SCROLL
+========================== */
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+    link.addEventListener('click', function(e){
+
+        const target = document.querySelector(this.getAttribute('href'));
+
+        if(target){
+
+            e.preventDefault();
+
+            target.scrollIntoView({
+                behavior:"smooth"
+            });
+
         }
+
     });
 
-    // Tutup menu otomatis jika layar diperbesar ke desktop
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 992) {
-            navList.style.display = '';
-        }
-    });
-
-    // Tutup menu jika klik di luar area nav (opsional, lebih baik)
-    document.addEventListener('click', function(e) {
-        const header = document.querySelector('.site-header');
-        if (header && !header.contains(e.target) && navList.style.display === 'flex') {
-            navList.style.display = 'none';
-        }
-    });
-}
-
-// ============================================
-// 2. FAQ ACCORDION
-// ============================================
-document.querySelectorAll('.faq-question').forEach(function(question) {
-    question.addEventListener('click', function() {
-        const parentItem = this.closest('.faq-item');
-        if (!parentItem) return;
-
-        // Toggle class 'active' pada item yang diklik
-        const isActive = parentItem.classList.contains('active');
-        
-        // Tutup semua FAQ item lainnya (agar hanya 1 terbuka)
-        document.querySelectorAll('.faq-item').forEach(function(item) {
-            item.classList.remove('active');
-        });
-
-        // Jika sebelumnya tidak aktif, maka aktifkan (toggle logic)
-        if (!isActive) {
-            parentItem.classList.add('active');
-        }
-    });
 });
 
-// ============================================
-// 3. STATISTIK COUNTER (Animasi Angka)
-// ============================================
-const statNumbers = document.querySelectorAll('.statistik-number');
 
-// Fungsi untuk menjalankan animasi angka
-function animateNumber(el) {
-    const target = parseInt(el.getAttribute('data-count')) || 0;
-    let current = 0;
-    const increment = target / 70; // Kecepatan animasi
-    const timer = setInterval(function() {
-        current += increment;
-        if (current >= target) {
-            el.textContent = target;
-            clearInterval(timer);
-        } else {
-            el.textContent = Math.floor(current);
+
+/* ==========================
+   HEADER EFFECT
+   Saat halaman discroll
+========================== */
+
+const header = document.querySelector("header");
+
+
+window.addEventListener("scroll", function(){
+
+    if(window.scrollY > 50){
+
+        header.style.boxShadow =
+        "0 5px 20px rgba(0,0,0,0.15)";
+
+    }else{
+
+        header.style.boxShadow = "none";
+
+    }
+
+});
+
+
+
+/* ==========================
+   FADE IN SECTION
+========================== */
+
+const sections = document.querySelectorAll("section");
+
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
         }
-    }, 20);
+
+    });
+
+},{
+    threshold:0.15
+});
+
+
+sections.forEach(section=>{
+
+    section.classList.add("hidden");
+
+    observer.observe(section);
+
+});
+
+
+
+/* ==========================
+   WHATSAPP CONFIRM
+========================== */
+
+const whatsappButton = document.querySelector(".button");
+
+
+if(whatsappButton){
+
+    whatsappButton.addEventListener("click", function(){
+
+        console.log(
+            "Menghubungkan ke WhatsApp Bird Travel..."
+        );
+
+    });
+
 }
 
-// Intersection Observer: mulai animasi saat elemen terlihat
-if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-                const el = entry.target;
-                animateNumber(el);
-                observer.unobserve(el); // Hanya jalan 1 kali
-            }
-        });
-    }, { threshold: 0.5 });
 
-    statNumbers.forEach(function(num) {
-        observer.observe(num);
-    });
-} else {
-    // Fallback untuk browser lama: jalanin langsung
-    statNumbers.forEach(function(num) {
-        animateNumber(num);
-    });
+
+/* ==========================
+   FOOTER YEAR OTOMATIS
+========================== */
+
+const year = document.querySelector("footer");
+
+
+if(year){
+
+    const currentYear = new Date().getFullYear();
+
+    year.innerHTML =
+    `&copy; ${currentYear} Bird Travel. All Rights Reserved.`;
+
 }
