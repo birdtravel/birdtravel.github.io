@@ -16,7 +16,6 @@
     --secondary-hover:#1faa56;
     --light:#f4f8fc;
     --text:#333333;
-    --shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 /* ======================
@@ -52,7 +51,7 @@ body{
 
     min-height:360px;
 
-    background:#0A4FA3;
+    background:var(--primary);
 
     align-items:center;
 
@@ -133,7 +132,7 @@ body{
 
     flex:1;
 
-    background:#0A4FA3;
+    background:var(--primary);
 
     color:#ffffff;
 
@@ -398,18 +397,6 @@ footer{
         font-size:25px;
         margin-top:60px;
     }
-
-    .circle{
-
-    display:inline-flex;
-
-    width:auto;
-
-    margin:auto;
-
-    padding:14px 28px;
-
-}
 
 }
 
