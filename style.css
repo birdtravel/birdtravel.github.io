@@ -78,18 +78,20 @@ body{
 
 .logo-perusahaan{
 
-    width:220px;
-    height:220px;
+    width:160px;
+    height:160px;
 
     object-fit:contain;
 
     background:#ffffff;
 
-    padding:20px;
+    padding:15px;
 
-    border-radius:25px;
+    border-radius:20px;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.18);
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
 
 }
 
