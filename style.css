@@ -205,23 +205,33 @@ body{
 
     justify-content:center;
 
+    background:var(--secondary);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:var(--shadow);
+
 }
 
-    justify-content:center;
-    background:var(--secondary);
-    color:#fff;
-    text-decoration:none;
-    padding:16px 34px;
-    border-radius:50px;
-    font-size:17px;
-    font-weight:600;
-    transition:.3s;
-    box-shadow:var(--shadow);
-}
 
 .circle:hover{
+
     background:var(--secondary-hover);
+
     transform:translateY(-3px);
+
 }
 
 /* ======================
@@ -472,4 +482,97 @@ footer{
 .show{
     opacity:1;
     transform:translateY(0);
+}
+/* ======================
+   FLOATING WHATSAPP
+====================== */
+
+.button{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:0;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    z-index:9999;
+
+    transition:.3s;
+
+}
+
+
+.button::before{
+
+    content:"";
+
+    width:32px;
+
+    height:32px;
+
+    background:white;
+
+    border-radius:50%;
+
+}
+
+
+.button::after{
+
+    content:"☎";
+
+    position:absolute;
+
+    color:#25D366;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+
+.button:hover{
+
+    background:#1faa56;
+
+    transform:scale(1.1);
+
+}
+
+
+@media(max-width:768px){
+
+    .button{
+
+        width:58px;
+
+        height:58px;
+
+        right:18px;
+
+        bottom:18px;
+
+    }
+
 }
