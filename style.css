@@ -67,7 +67,7 @@ body{
 
     width:38%;
 
-    background:#ffffff;
+    background:#7ec8f5;
 
     display:flex;
 
@@ -80,17 +80,17 @@ body{
 }
 
 
-/* LOGO PERUSAHAAN */
+/* ======================
+   LOGO PERUSAHAAN
+====================== */
 
 .logo-perusahaan{
 
-    width:450px !important;
+    width:260px;
 
-    height:450px !important;
+    height:260px;
 
     object-fit:contain;
-
-}
 
     border-radius:20px;
 
