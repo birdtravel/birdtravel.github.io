@@ -84,11 +84,13 @@ body{
 
 .logo-perusahaan{
 
-    width:450px;
+    width:450px !important;
 
-    height:450px;
+    height:450px !important;
 
     object-fit:contain;
+
+}
 
     border-radius:20px;
 
