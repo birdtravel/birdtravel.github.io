@@ -61,14 +61,14 @@ body{
 
 .hero-logo{
 
-    width:40%;
+    width:38%;
     background:#ffffff;
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-    padding:40px;
+    padding:30px;
 
 }
 }
