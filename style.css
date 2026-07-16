@@ -15,10 +15,8 @@
     --secondary:#25D366;
     --secondary-hover:#1faa56;
     --light:#f4f8fc;
-    --white:#ffffff;
     --text:#333333;
     --shadow:0 10px 30px rgba(0,0,0,.08);
-    --radius:12px;
 }
 
 /* ======================
@@ -64,10 +62,6 @@ body{
    BAGIAN LOGO PUTIH
 ====================== */
 
-/* ======================
-   BAGIAN LOGO PUTIH
-====================== */
-
 .hero-logo{
 
     width:360px;
@@ -83,10 +77,6 @@ body{
     flex-shrink:0;
 
 }
-
-/* ======================
-   LOGO PERUSAHAAN
-====================== */
 
 /* ======================
    LINGKARAN PUTIH
@@ -186,50 +176,6 @@ body{
     line-height:1.6;
 
     margin-bottom:25px;
-
-}
-/* ======================
-   circle
-====================== */
-
-.circle{
-
-    display:inline-flex;
-
-    width:max-content;
-
-    max-width:100%;
-
-    align-items:center;
-
-    justify-content:center;
-
-    background:var(--secondary);
-
-    color:#fff;
-
-    text-decoration:none;
-
-    padding:16px 34px;
-
-    border-radius:50px;
-
-    font-size:17px;
-
-    font-weight:600;
-
-    transition:.3s;
-
-    box-shadow:var(--shadow);
-
-}
-
-
-.circle:hover{
-
-    background:var(--secondary-hover);
-
-    transform:translateY(-3px);
 
 }
 
