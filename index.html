@@ -1,580 +1,129 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bird Travel — Mitra Terpercaya Perjalanan Dinas Kementerian, Lembaga, dan Instansi Pemerintah. Solusi pemesanan tiket pesawat, hotel, kereta api, bus, dan sewa kendaraan untuk perjalanan dinas." />
-    <title>Bird Travel — Mitra Perjalanan Dinas Pemerintah</title>
+<link rel="stylesheet"href="style.css">
+  <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bird Travel</title>
 
-    <!-- Favicon placeholder -->
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+<style>
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:#f4f8fc;
+color:#333;
+}
 
-    <!-- Google Font Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+header{
+background:#0a4fa3;
+color:white;
+padding:50px 20px;
+text-align:center;
+}
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+header h1{
+margin:0;
+font-size:42px;
+}
+
+header h2{
+font-size:20px;
+font-weight:normal;
+margin-top:15px;
+}
+
+section{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+h3{
+color:#0a4fa3;
+}
+
+ul{
+line-height:2;
+}
+
+.button{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:15px 30px;
+text-decoration:none;
+border-radius:8px;
+font-size:18px;
+font-weight:bold;
+margin-top:20px;
+}
+
+footer{
+background:#0a4fa3;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+</style>
+
 </head>
+<script src="script.js"></script>
 <body>
 
-    <!-- ============================== -->
-    <!-- 1. HEADER & NAVBAR            -->
-    <!-- ============================== -->
-    <header id="header" class="site-header">
-        <div class="container header-container">
-            <div class="brand">
-                <a href="#" class="logo-link">
-                    <img src="assets/logo-bird-travel.png" alt="Bird Travel Logo" class="logo-img" />
-                    <span class="brand-name">Bird Travel</span>
-                </a>
-            </div>
-            <nav id="navbar" class="main-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#hero" class="nav-link">Beranda</a></li>
-                    <li class="nav-item"><a href="#tentang" class="nav-link">Tentang</a></li>
-                    <li class="nav-item"><a href="#layanan" class="nav-link">Layanan</a></li>
-                    <li class="nav-item"><a href="#keunggulan" class="nav-link">Keunggulan</a></li>
-                    <li class="nav-item"><a href="#proses" class="nav-link">Proses</a></li>
-                    <li class="nav-item"><a href="#statistik" class="nav-link">Statistik</a></li>
-                    <li class="nav-item"><a href="#galeri" class="nav-link">Galeri</a></li>
-                    <li class="nav-item"><a href="#maskapai" class="nav-link">Maskapai</a></li>
-                    <li class="nav-item"><a href="#testimoni" class="nav-link">Testimoni</a></li>
-                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
-                    <li class="nav-item"><a href="#kontak" class="nav-link">Kontak</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <a href="#kontak" class="btn btn-primary btn-sm">Hubungi Kami</a>
-                <button class="hamburger-toggle" id="hamburgerToggle" aria-label="Toggle menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+<header>
 
-    <!-- ============================== -->
-    <!-- 2. HERO SECTION               -->
-    <!-- ============================== -->
-    <section id="hero" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="container hero-container">
-            <div class="hero-content">
-                <span class="hero-badge">Mitra Terpercaya</span>
-                <h1 class="hero-title">Bird Travel — Mitra Terpercaya Perjalanan Dinas Kementerian, Lembaga, dan Instansi Pemerintah</h1>
-                <p class="hero-subtitle">Solusi perjalanan dinas pemerintah yang cepat, mudah, dan profesional dengan sistem pembayaran fleksibel.</p>
-                <div class="hero-buttons">
-                    <a href="#layanan" class="btn btn-primary">Layanan Kami</a>
-                    <a href="#kontak" class="btn btn-outline">Hubungi Kami</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="assets/hero-bg.jpg" alt="Perjalanan dinas yang nyaman bersama Bird Travel" />
-            </div>
-        </div>
-        <div class="hero-wave">
-            <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 40L60 33.3C120 26.7 240 13.3 360 10C480 6.7 600 13.3 720 18.3C840 23.3 960 26.7 1080 25C1200 23.3 1320 16.7 1380 13.3L1440 10V60H1380C1320 60 1200 60 1080 60C960 60 840 60 720 60C600 60 480 60 360 60C240 60 120 60 60 60H0V40Z" fill="#ffffff" />
-            </svg>
-        </div>
-    </section>
+<h1>BIRD TRAVEL</h1>
 
-    <!-- ============================== -->
-    <!-- 3. TENTANG BIRD TRAVEL        -->
-    <!-- ============================== -->
-    <section id="tentang" class="tentang-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Tentang Kami</span>
-                <h2 class="section-title">Bird Travel — Mitra Terpercaya Perjalanan Dinas</h2>
-                <p class="section-desc">Hadir sebagai mitra terpercaya untuk memenuhi kebutuhan perjalanan dinas instansi pemerintah, kementerian, lembaga, maupun perusahaan.</p>
-            </div>
-            <div class="tentang-grid">
-                <article class="tentang-content">
-                    <p class="tentang-text">Bird Travel adalah perusahaan layanan perjalanan dinas yang berkomitmen memberikan solusi terbaik bagi instansi pemerintah dan swasta. Dengan pengalaman bertahun-tahun, kami memahami kebutuhan perjalanan dinas yang efisien, akuntabel, dan sesuai dengan ketentuan yang berlaku.</p>
-                    <p class="tentang-text">Kami hadir untuk membantu kelancaran pelaksanaan tugas instansi Bapak/Ibu dengan pelayanan terbaik dan sistem pembayaran yang fleksibel sesuai ketentuan yang berlaku.</p>
-                    <ul class="tentang-list">
-                        <li><i class="fas fa-check-circle"></i> Berpengalaman melayani kementerian dan instansi pemerintah</li>
-                        <li><i class="fas fa-check-circle"></i> Proses pemesanan cepat, mudah, dan responsif</li>
-                        <li><i class="fas fa-check-circle"></i> Fasilitas pembayaran tempo hingga 30 hari</li>
-                        <li><i class="fas fa-check-circle"></i> Melayani seluruh maskapai domestik di Indonesia</li>
-                    </ul>
-                </article>
-                <aside class="tentang-image">
-                    <img src="assets/hero-bg.jpg" alt="Tentang Bird Travel" />
-                </aside>
-            </div>
-        </div>
-    </section>
+<h2>Mitra Terpercaya Perjalanan Dinas Kementerian, Lembaga, dan Instansi Pemerintah</h2>
 
-    <!-- ============================== -->
-    <!-- 4. LAYANAN                     -->
-    <!-- ============================== -->
-    <section id="layanan" class="layanan-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Layanan Kami</span>
-                <h2 class="section-title">Solusi Lengkap Perjalanan Dinas</h2>
-                <p class="section-desc">Kami menyediakan berbagai layanan untuk memenuhi seluruh kebutuhan perjalanan dinas Anda.</p>
-            </div>
-            <div class="layanan-grid">
-                <article class="layanan-card">
-                    <div class="layanan-icon"><i class="fas fa-plane"></i></div>
-                    <h3 class="layanan-title">Tiket Pesawat Domestik</h3>
-                    <p class="layanan-desc">Melayani seluruh maskapai domestik di Indonesia dengan harga kompetitif dan proses pemesanan cepat.</p>
-                </article>
-                <article class="layanan-card">
-                    <div class="layanan-icon"><i class="fas fa-hotel"></i></div>
-                    <h3 class="layanan-title">Reservasi Hotel</h3>
-                    <p class="layanan-desc">Pemesanan hotel di seluruh Indonesia dengan pilihan akomodasi yang sesuai kebutuhan dinas.</p>
-                </article>
-                <article class="layanan-card">
-                    <div class="layanan-icon"><i class="fas fa-train"></i></div>
-                    <h3 class="layanan-title">Tiket Kereta Api</h3>
-                    <p class="layanan-desc">Pemesanan tiket kereta api untuk perjalanan dinas antar kota dengan kenyamanan dan ketepatan waktu.</p>
-                </article>
-                <article class="layanan-card">
-                    <div class="layanan-icon"><i class="fas fa-bus"></i></div>
-                    <h3 class="layanan-title">Tiket Bus</h3>
-                    <p class="layanan-desc">Layanan pemesanan tiket bus untuk perjalanan dinas dengan armada terpercaya dan rute lengkap.</p>
-                </article>
-                <article class="layanan-card">
-                    <div class="layanan-icon"><i class="fas fa-car"></i></div>
-                    <h3 class="layanan-title">Sewa Kendaraan</h3>
-                    <p class="layanan-desc">Penyewaan kendaraan operasional untuk mendukung mobilitas perjalanan dinas instansi Anda.</p>
-                </article>
-                <article class="layanan-card">
-                    <div class="layanan-icon"><i class="fas fa-headset"></i></div>
-                    <h3 class="layanan-title">Kebutuhan Lainnya</h3>
-                    <p class="layanan-desc">Kami siap melayani kebutuhan perjalanan dinas lainnya sesuai dengan permintaan instansi.</p>
-                </article>
-            </div>
-        </div>
-    </section>
+<a class="button" href="https://wa.me/6285343004443">Hubungi via WhatsApp</a>
 
-    <!-- ============================== -->
-    <!-- 5. KEUNGGULAN                  -->
-    <!-- ============================== -->
-    <section id="keunggulan" class="keunggulan-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Keunggulan</span>
-                <h2 class="section-title">Mengapa Memilih Bird Travel?</h2>
-                <p class="section-desc">Kami berkomitmen memberikan pelayanan terbaik untuk perjalanan dinas Anda.</p>
-            </div>
-            <div class="keunggulan-grid">
-                <article class="keunggulan-card">
-                    <div class="keunggulan-icon"><i class="fas fa-calendar-check"></i></div>
-                    <h3 class="keunggulan-title">Pembayaran Tempo</h3>
-                    <p class="keunggulan-desc">Fasilitas pembayaran tempo mulai 30 hari atau sesuai kesepakatan dengan instansi.</p>
-                </article>
-                <article class="keunggulan-card">
-                    <div class="keunggulan-icon"><i class="fas fa-bolt"></i></div>
-                    <h3 class="keunggulan-title">Cepat &amp; Responsif</h3>
-                    <p class="keunggulan-desc">Proses pemesanan cepat, mudah, dan responsif untuk mendukung kelancaran tugas Anda.</p>
-                </article>
-                <article class="keunggulan-card">
-                    <div class="keunggulan-icon"><i class="fas fa-building"></i></div>
-                    <h3 class="keunggulan-title">Berpengalaman</h3>
-                    <p class="keunggulan-desc">Berpengalaman melayani kebutuhan perjalanan dinas kementerian, instansi pemerintah dan perusahaan swasta.</p>
-                </article>
-                <article class="keunggulan-card">
-                    <div class="keunggulan-icon"><i class="fas fa-clock"></i></div>
-                    <h3 class="keunggulan-title">24 Jam &amp; Tepat Waktu</h3>
-                    <p class="keunggulan-desc">Komitmen memberikan pelayanan profesional 24 jam, tepat waktu, dan dapat dipercaya.</p>
-                </article>
-                <article class="keunggulan-card">
-                    <div class="keunggulan-icon"><i class="fas fa-handshake"></i></div>
-                    <h3 class="keunggulan-title">Mitra Terpercaya</h3>
-                    <p class="keunggulan-desc">Menjadi mitra layanan perjalanan dinas yang membantu kelancaran pelaksanaan tugas instansi.</p>
-                </article>
-                <article class="keunggulan-card">
-                    <div class="keunggulan-icon"><i class="fas fa-credit-card"></i></div>
-                    <h3 class="keunggulan-title">Sistem Pembayaran Fleksibel</h3>
-                    <p class="keunggulan-desc">Sistem pembayaran yang fleksibel sesuai dengan ketentuan yang berlaku di instansi.</p>
-                </article>
-            </div>
-        </div>
-    </section>
+</header>
 
-    <!-- ============================== -->
-    <!-- 6. PROSES PEMESANAN           -->
-    <!-- ============================== -->
-    <section id="proses" class="proses-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Proses Pemesanan</span>
-                <h2 class="section-title">Mudah &amp; Cepat</h2>
-                <p class="section-desc">Ikuti langkah-langkah berikut untuk memesan perjalanan dinas bersama Bird Travel.</p>
-            </div>
-            <div class="proses-grid">
-                <article class="proses-card">
-                    <div class="proses-number">1</div>
-                    <div class="proses-icon"><i class="fas fa-phone-alt"></i></div>
-                    <h3 class="proses-title">Hubungi Kami</h3>
-                    <p class="proses-desc">Hubungi tim Bird Travel melalui WhatsApp, telepon, atau email untuk konsultasi kebutuhan perjalanan dinas.</p>
-                </article>
-                <article class="proses-card">
-                    <div class="proses-number">2</div>
-                    <div class="proses-icon"><i class="fas fa-clipboard-list"></i></div>
-                    <h3 class="proses-title">Penyusunan Rencana</h3>
-                    <p class="proses-desc">Tim kami akan menyusun rencana perjalanan sesuai dengan kebutuhan dan anggaran instansi.</p>
-                </article>
-                <article class="proses-card">
-                    <div class="proses-number">3</div>
-                    <div class="proses-icon"><i class="fas fa-ticket-alt"></i></div>
-                    <h3 class="proses-title">Pemesanan</h3>
-                    <p class="proses-desc">Kami akan memproses pemesanan tiket, hotel, dan kebutuhan lainnya secara cepat dan akurat.</p>
-                </article>
-                <article class="proses-card">
-                    <div class="proses-number">4</div>
-                    <div class="proses-icon"><i class="fas fa-file-invoice"></i></div>
-                    <h3 class="proses-title">Dokumentasi &amp; Pembayaran</h3>
-                    <p class="proses-desc">Dokumen perjalanan diserahkan lengkap dengan sistem pembayaran yang fleksibel sesuai ketentuan.</p>
-                </article>
-            </div>
-        </div>
-    </section>
+<section>
 
-    <!-- ============================== -->
-    <!-- 7. STATISTIK                   -->
-    <!-- ============================== -->
-    <section id="statistik" class="statistik-section">
-        <div class="container">
-            <div class="statistik-grid">
-                <article class="statistik-item">
-                    <span class="statistik-number" data-count="150">0</span>
-                    <span class="statistik-label">Instansi Terpercaya</span>
-                </article>
-                <article class="statistik-item">
-                    <span class="statistik-number" data-count="5000">0</span>
-                    <span class="statistik-label">Perjalanan Dinas</span>
-                </article>
-                <article class="statistik-item">
-                    <span class="statistik-number" data-count="30">0</span>
-                    <span class="statistik-label">Mitra Maskapai</span>
-                </article>
-                <article class="statistik-item">
-                    <span class="statistik-number" data-count="100">0</span>
-                    <span class="statistik-label">Kepuasan Klien</span>
-                </article>
-            </div>
-        </div>
-    </section>
+<h3>Solusi Perjalanan Dinas Pemerintah</h3>
 
-    <!-- ============================== -->
-    <!-- 8. GALERI                      -->
-    <!-- ============================== -->
-    <section id="galeri" class="galeri-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Galeri</span>
-                <h2 class="section-title">Dokumentasi Perjalanan</h2>
-                <p class="section-desc">Berbagai momen perjalanan dinas yang telah kami fasilitasi dengan pelayanan terbaik.</p>
-            </div>
-            <div class="galeri-grid">
-                <figure class="galeri-item">
-                    <img src="assets/hero-bg.jpg" alt="Perjalanan dinas dengan pesawat" />
-                    <figcaption class="galeri-caption">Perjalanan Dinas Udara</figcaption>
-                </figure>
-                <figure class="galeri-item">
-                    <img src="assets/hotel.png" alt="Reservasi hotel untuk dinas" />
-                    <figcaption class="galeri-caption">Reservasi Hotel</figcaption>
-                </figure>
-                <figure class="galeri-item">
-                    <img src="assets/kereta.png" alt="Perjalanan dinas kereta api" />
-                    <figcaption class="galeri-caption">Perjalanan Kereta Api</figcaption>
-                </figure>
-                <figure class="galeri-item">
-                    <img src="assets/bus.png" alt="Perjalanan dinas dengan bus" />
-                    <figcaption class="galeri-caption">Perjalanan Bus</figcaption>
-                </figure>
-                <figure class="galeri-item">
-                    <img src="assets/pesawat.png" alt="Tiket pesawat domestik" />
-                    <figcaption class="galeri-caption">Tiket Pesawat Domestik</figcaption>
-                </figure>
-                <figure class="galeri-item">
-                    <img src="assets/hero-bg.jpg" alt="Tim Bird Travel melayani klien" />
-                    <figcaption class="galeri-caption">Pelayanan Profesional</figcaption>
-                </figure>
-            </div>
-        </div>
-    </section>
+<p>Bird Travel hadir sebagai mitra terpercaya untuk memenuhi kebutuhan perjalanan dinas instansi pemerintah, kementerian, lembaga maupun perusahaan.</p>
 
-    <!-- ============================== -->
-    <!-- 9. LOGO MASKAPAI              -->
-    <!-- ============================== -->
-    <section id="maskapai" class="maskapai-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Mitra Maskapai</span>
-                <h2 class="section-title">Melayani Seluruh Maskapai Domestik</h2>
-                <p class="section-desc">Kami bekerja sama dengan seluruh maskapai domestik di Indonesia untuk memberikan pilihan terbaik.</p>
-            </div>
-            <div class="maskapai-grid">
-                <div class="maskapai-item"><img src="assets/logo-bird-travel.png" alt="Garuda Indonesia" /></div>
-                <div class="maskapai-item"><img src="assets/logo-bird-travel.png" alt="Citilink" /></div>
-                <div class="maskapai-item"><img src="assets/logo-bird-travel.png" alt="Lion Air" /></div>
-                <div class="maskapai-item"><img src="assets/logo-bird-travel.png" alt="Batik Air" /></div>
-                <div class="maskapai-item"><img src="assets/logo-bird-travel.png" alt="Sriwijaya Air" /></div>
-                <div class="maskapai-item"><img src="assets/logo-bird-travel.png" alt="Nam Air" /></div>
-                <div class="maskapai-item"><img src="assets/logo-bird-travel.png" alt="Wings Air" /></div>
-                <div class="maskapai-item"><img src="assets/logo-bird-travel.png" alt="Super Air Jet" /></div>
-            </div>
-            <p class="maskapai-note">* Dan seluruh maskapai domestik lainnya di Indonesia.</p>
-        </div>
-    </section>
+<h3>Layanan Kami</h3>
 
-    <!-- ============================== -->
-    <!-- 10. TESTIMONI                  -->
-    <!-- ============================== -->
-    <section id="testimoni" class="testimoni-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Testimoni</span>
-                <h2 class="section-title">Apa Kata Mereka?</h2>
-                <p class="section-desc">Ulasan dari klien yang telah menggunakan layanan Bird Travel.</p></div>
-            <div class="testimoni-grid">
-                <article class="testimoni-card">
-                    <div class="testimoni-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimoni-text">"Bird Travel sangat membantu kelancaran perjalanan dinas di instansi kami. Proses pemesanan cepat dan responsif. Sangat direkomendasikan!"</p>
-                    <div class="testimoni-profile">
-                        <img src="assets/logo-bird-travel.png" alt="Avatar" class="testimoni-avatar" />
-                        <div class="testimoni-info">
-                            <span class="testimoni-name">Bapak Andi</span>
-                            <span class="testimoni-role">Kepala Bagian Umum, Kementerian X</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="testimoni-card">
-                    <div class="testimoni-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimoni-text">"Sistem pembayaran yang fleksibel sangat memudahkan kami. Bird Travel benar-benar mitra terpercaya untuk perjalanan dinas."</p>
-                    <div class="testimoni-profile">
-                        <img src="assets/logo-bird-travel.png" alt="Avatar" class="testimoni-avatar" />
-                        <div class="testimoni-info">
-                            <span class="testimoni-name">Ibu Sari</span>
-                            <span class="testimoni-role">Bendahara, Lembaga Y</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="testimoni-card">
-                    <div class="testimoni-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimoni-text">"Pelayanan 24 jam dari Bird Travel sangat membantu ketika ada perubahan jadwal mendadak. Timnya profesional dan tanggap."</p>
-                    <div class="testimoni-profile">
-                        <img src="assets/logo-bird-travel.png" alt="Avatar" class="testimoni-avatar" />
-                        <div class="testimoni-info">
-                            <span class="testimoni-name">Bapak Budi</span>
-                            <span class="testimoni-role">Koordinator Perjalanan, Perusahaan Z</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+<ul>
+<li>Tiket Pesawat Domestik</li>
+<li>Reservasi Hotel</li>
+<li>Tiket Kereta Api</li>
+<li>Tiket Bus</li>
+<li>Sewa Kendaraan</li>
+<li>Kebutuhan perjalanan dinas lainnya</li>
+</ul>
 
-    <!-- ============================== -->
-    <!-- 11. FAQ                        -->
-    <!-- ============================== -->
-    <section id="faq" class="faq-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">FAQ</span>
-                <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
-                <p class="section-desc">Informasi lengkap seputar layanan perjalanan dinas Bird Travel.</p>
-            </div>
-            <div class="faq-list">
-                <article class="faq-item">
-                    <div class="faq-question">
-                        <h3 class="faq-title">Apakah Bird Travel melayani perjalanan dinas untuk semua instansi?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Ya, Bird Travel melayani kebutuhan perjalanan dinas untuk kementerian, lembaga pemerintah, instansi daerah, BUMN, dan perusahaan swasta di seluruh Indonesia.</p>
-                    </div>
-                </article>
-                <article class="faq-item">
-                    <div class="faq-question">
-                        <h3 class="faq-title">Bagaimana sistem pembayaran yang ditawarkan?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Kami menawarkan fasilitas pembayaran tempo mulai 30 hari atau sesuai kesepakatan dengan instansi. Sistem pembayaran fleksibel sesuai dengan ketentuan yang berlaku di instansi Anda.</p>
-                    </div>
-                </article>
-                <article class="faq-item">
-                    <div class="faq-question">
-                        <h3 class="faq-title">Maskapai apa saja yang dilayani oleh Bird Travel?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Bird Travel melayani seluruh maskapai domestik di Indonesia, termasuk Garuda Indonesia, Citilink, Lion Air, Batik Air, Sriwijaya Air, Nam Air, Wings Air, Super Air Jet, dan maskapai lainnya.</p>
-                    </div>
-                </article>
-                <article class="faq-item">
-                    <div class="faq-question">
-                        <h3 class="faq-title">Bagaimana cara memesan perjalanan dinas melalui Bird Travel?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Anda dapat menghubungi tim Bird Travel melalui WhatsApp/Telepon di 085343004443 atau email di birdtrvl@gmail.com. Tim kami akan membantu proses pemesanan dengan cepat dan mudah.</p>
-                    </div>
-                </article>
-                <article class="faq-item">
-                    <div class="faq-question">
-                        <h3 class="faq-title">Apakah Bird Travel menyediakan layanan 24 jam?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Ya, Bird Travel berkomitmen memberikan pelayanan profesional 24 jam untuk mendukung kelancaran perjalanan dinas instansi Anda.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+<h3>Keunggulan Bird Travel</h3>
 
-    <!-- ============================== -->
-    <!-- 12. KONTAK                     -->
-    <!-- ============================== -->
-    <section id="kontak" class="kontak-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Kontak Kami</span>
-                <h2 class="section-title">Hubungi Bird Travel</h2>
-                <p class="section-desc">Siap membantu kebutuhan perjalanan dinas instansi Anda dengan pelayanan terbaik.</p>
-            </div>
-            <div class="kontak-grid">
-                <article class="kontak-info">
-                    <div class="kontak-item">
-                        <div class="kontak-icon"><i class="fas fa-phone-alt"></i></div>
-                        <div class="kontak-detail">
-                            <span class="kontak-label">WhatsApp / Telepon</span>
-                            <a href="tel:085343004443" class="kontak-value">085343004443</a>
-                        </div>
-                    </div>
-                    <div class="kontak-item">
-                        <div class="kontak-icon"><i class="fas fa-envelope"></i></div>
-                        <div class="kontak-detail">
-                            <span class="kontak-label">Email</span>
-                            <a href="mailto:birdtrvl@gmail.com" class="kontak-value">birdtrvl@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="kontak-item">
-                        <div class="kontak-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="kontak-detail">
-                            <span class="kontak-label">Alamat</span>
-                            <span class="kontak-value">Jakarta, Indonesia</span>
-                        </div>
-                    </div>
-                    <div class="kontak-item">
-                        <div class="kontak-icon"><i class="fas fa-clock"></i></div>
-                        <div class="kontak-detail">
-                            <span class="kontak-label">Jam Layanan</span>
-                            <span class="kontak-value">24 Jam Nonstop</span>
-                        </div>
-                    </div>
-                    <div class="kontak-social">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </article>
-                <aside class="kontak-form">
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="nama">Nama Lengkap</label>
-                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Masukkan alamat email" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="instansi">Instansi</label>
-                            <input type="text" id="instansi" name="instansi" placeholder="Masukkan nama instansi" />
-                        </div>
-                        <div class="form-group">
-                            <label for="pesan">Pesan</label>
-                            <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan atau kebutuhan perjalanan dinas Anda" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
-                    </form>
-                </aside>
-            </div>
-        </div>
-    </section>
+<ul>
+<li>Pembayaran tempo 30 hari atau sesuai kesepakatan.</li>
+<li>Pelayanan profesional 24 jam.</li>
+<li>Proses cepat, mudah dan responsif.</li>
+<li>Melayani seluruh maskapai domestik Indonesia.</li>
+<li>Berpengalaman melayani kebutuhan perjalanan dinas kementerian, instansi pemerintah dan perusahaan swasta.</li>
+</ul>
 
-    <!-- ============================== -->
-    <!-- 13. FOOTER                     -->
-    <!-- ============================== -->
-    <footer id="footer" class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="assets/logo-bird-travel.png" alt="Bird Travel Logo" class="footer-logo" />
-                    <p class="footer-desc">Bird Travel — Mitra Terpercaya Perjalanan Dinas Kementerian, Lembaga, dan Instansi Pemerintah.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4 class="footer-heading">Tautan Cepat</h4>
-                    <ul>
-                        <li><a href="#hero">Beranda</a></li>
-                        <li><a href="#tentang">Tentang</a></li>
-                        <li><a href="#layanan">Layanan</a></li>
-                        <li><a href="#keunggulan">Keunggulan</a></li>
-                        <li><a href="#proses">Proses</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4 class="footer-heading">Layanan</h4>
-                    <ul>
-                        <li><a href="#layanan">Tiket Pesawat</a></li>
-                        <li><a href="#layanan">Reservasi Hotel</a></li>
-                        <li><a href="#layanan">Tiket Kereta Api</a></li>
-                        <li><a href="#layanan">Tiket Bus</a></li>
-                        <li><a href="#layanan">Sewa Kendaraan</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4 class="footer-heading">Hubungi Kami</h4>
-                    <ul>
-                        <li><i class="fas fa-phone-alt"></i> <a href="tel:085343004443">085343004443</a></li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:birdtrvl@gmail.com">birdtrvl@gmail.com</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
-                        <li><i class="fas fa-clock"></i> 24 Jam Nonstop</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Bird Travel. All rights reserved.</p>
-                <p class="footer-maskapai">Melayani seluruh maskapai domestik di Indonesia</p>
-            </div>
-        </div>
-    </footer>
-<script src="script.js" defer></script>
+<h3>Hubungi Kami</h3>
+
+<p><b>WhatsApp / Telepon</b><br>085343004443</p>
+
+<p><b>Email</b><br>birdtrvl@gmail.com</p>
+
+<p><b>Lokasi</b><br>Jakarta</p>
+
+</section>
+
+<footer>
+
+© 2026 Bird Travel
+
+</footer>
+
 </body>
+
 </html>
