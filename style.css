@@ -171,15 +171,15 @@ body{
 
 .hero-content h2{
 
-    max-width:800px;
+    max-width:600px;
 
     font-size:22px;
 
     font-weight:400;
 
-    line-height:1.8;
+    line-height:1.6;
 
-    margin-bottom:35px;
+    margin-bottom:25px;
 
 }
 /* ======================
@@ -191,6 +191,10 @@ body{
     display:inline-flex;
 
     width:max-content;
+
+    max-width:100%;
+
+}
 
     align-items:center;
 
@@ -266,7 +270,7 @@ p{
 
     margin-bottom:30px;
 
-    text-align:justify;
+    text-align:left;
 
     font-size:17px;
 
@@ -348,31 +352,59 @@ footer{
 
 @media(max-width:768px){
 
+.hero{
+
+    flex-direction:column;
+
+    width:100%;
+
+    min-height:auto;
+
+    text-align:center;
+
+}
+
+
+.hero-logo{
+
+    width:100%;
+
+    padding:30px 0;
+
+}
+
+
 .logo-circle{
 
     width:240px;
+
     height:240px;
 
+    margin:auto;
+
 }
+
 
 .logo-perusahaan{
 
-    width:160px;
+    width:180px;
 
-    transform:scale(1.6);
+    transform:scale(1.5);
 
 }
 
 
-    .hero-content{
+.hero-content{
 
-        width:100%;
+    width:100%;
 
-        padding:40px 25px;
+    padding:30px 20px;
 
-        text-align:center;
+    text-align:center;
 
-    }
+    align-items:center;
+
+}
 
 
     .hero-content h1{
