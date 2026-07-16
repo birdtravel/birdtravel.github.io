@@ -120,13 +120,13 @@ body{
 
 .logo-perusahaan{
 
-    width:220px;
+    width:310px;
 
     height:auto;
 
     object-fit:contain;
 
-    transform:scale(1.10);
+    transform:scale(1.55);
 
     transition:.3s;
 
