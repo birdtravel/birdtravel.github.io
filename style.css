@@ -153,7 +153,10 @@ body{
 
     justify-content:center;
 
+    align-items:flex-start;
+
     padding:40px 60px;
+
 }
 
 
@@ -487,11 +490,13 @@ footer{
 
     display:inline-flex;
 
+    width:max-content;
+
     align-items:center;
 
     justify-content:center;
 
-    gap:10px;
+    gap:8px;
 
     background:#25D366;
 
@@ -499,15 +504,15 @@ footer{
 
     text-decoration:none;
 
-    padding:14px 30px;
+    padding:10px 20px;
 
     border-radius:50px;
 
-    font-size:17px;
+    font-size:15px;
 
     font-weight:600;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
 
     transition:.3s;
 
