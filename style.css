@@ -59,18 +59,24 @@ body{
    BAGIAN LOGO PUTIH
 ====================== */
 
+/* ======================
+   BAGIAN LOGO PUTIH
+====================== */
+
 .hero-logo{
 
     width:38%;
+
     background:#ffffff;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
     padding:30px;
 
-}
 }
 
 
@@ -79,6 +85,7 @@ body{
 .logo-perusahaan{
 
     width:160px;
+
     height:160px;
 
     object-fit:contain;
@@ -92,15 +99,6 @@ body{
     box-shadow:0 10px 30px rgba(0,0,0,.15);
 
 }
-
-}
-
-    border-radius:20px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-
-}
-
 
 
 /* ======================
